@@ -4,6 +4,7 @@ plugins {
     kotlin("multiplatform")
     id("org.jetbrains.compose")
     id("com.android.library")
+    kotlin("native.cocoapods")
 }
 
 group = "com.kashif"
@@ -16,6 +17,24 @@ kotlin {
             kotlinOptions.jvmTarget = "11"
         }
     }
+
+    ios()
+    iosSimulatorArm64()
+
+    cocoapods {
+        summary = "Some description for the Shared Module"
+        homepage = "Link to the Shared Module homepage"
+        version = "1.0"
+        ios.deploymentTarget = "14.1"
+        podfile = project.file("../ios/Podfile")
+        framework {
+            baseName = "common"
+            isStatic = true
+        }
+    }
+
+
+
     sourceSets {
         val commonMain by getting {
             dependencies {
@@ -31,7 +50,7 @@ kotlin {
         }
         val androidMain by getting {
             dependencies {
-                api("androidx.appcompat:appcompat:1.5.1")
+                api("androidx.appcompat:appcompat:1.6.1")
                 api("androidx.core:core-ktx:1.9.0")
             }
         }
@@ -46,8 +65,17 @@ kotlin {
             }
         }
         val desktopTest by getting
+
+        val iosMain by getting {
+            dependsOn(commonMain)
+        }
+        val iosSimulatorArm64Main by getting {
+            dependsOn(iosMain)
+        }
+
     }
 }
+
 
 android {
     compileSdkVersion(33)
