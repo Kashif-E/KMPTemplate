@@ -34,7 +34,7 @@ compose.desktop {
         mainClass = "desktop/src/jvmMain/kotlin/Main.kt"
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-            packageName = "KMPMovies"
+            packageName = "KMPTemplate"
             packageVersion = "1.0.0"
         }
     }

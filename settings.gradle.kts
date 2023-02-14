@@ -15,6 +15,6 @@ pluginManagement {
     }
 }
 
-rootProject.name = "KMPMovies"
+rootProject.name = "KMPTemplate"
 
 include(":android", ":desktop", ":common")
