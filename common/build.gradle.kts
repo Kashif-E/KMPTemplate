@@ -8,6 +8,8 @@ plugins {
 group = "com.kashif"
 version = "1.0-SNAPSHOT"
 
+fun composeDependency(groupWithArtifact: String) = "$groupWithArtifact:${libs.versions.compose}"
+
 kotlin {
     android()
     jvm("desktop") {
@@ -48,13 +50,13 @@ kotlin {
         }
         val androidMain by getting {
             dependencies {
-                api("androidx.appcompat:appcompat:1.6.1")
-                api("androidx.core:core-ktx:1.9.0")
+                api(libs.androidx.appcompat)
+                api(libs.androidx.coreKtx)
             }
         }
         val androidUnitTest by getting {
             dependencies {
-                implementation("junit:junit:4.13.2")
+                implementation(libs.junit)
             }
         }
         val desktopMain by getting {
@@ -76,11 +78,11 @@ kotlin {
 
 
 android {
-    compileSdk = 33
+    compileSdk = libs.versions.compileSdk.get().toInt()
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
     defaultConfig {
-        minSdk = 24
-        targetSdk = 33
+        minSdk = libs.versions.minSdk.get().toInt()
+        targetSdk = libs.versions.targetSdk.get().toInt()
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
