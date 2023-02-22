@@ -23,3 +23,12 @@ Well yes and no at the same time. You can use compose generated UIControllers wi
 
 If you have any suggestion or found a bug please add it to the issues.
 
+<p align="left">
+<a href="https://twitter.com/kashif_mehmood_" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="kashif_mehmood_" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/kashif-mehmood" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="kashif-mehmood" height="30" width="40" /></a>
+<a href="https://stackoverflow.com/users/kashif-mehmood" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="kashif-mehmood" height="30" width="40" /></a>
+<a href="https://fb.com/kashi.m.456" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="kashi.m.456" height="30" width="40" /></a>
+<a href="https://instagram.com/kashif_mehmood._" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="kashif_mehmood._" height="30" width="40" /></a>
+<a href="https://medium.com/@kashif-mehmood-km" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg" alt="@kashif-mehmood-km" height="30" width="40" /></a>
+</p>
+
