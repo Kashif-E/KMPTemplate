@@ -16,7 +16,7 @@ This is a bear minimum without networking or other things such as db. This will 
 # How it works?
 Runs natively on Android.
 Uses UIKit under the hood for IOS.
-Uses Skia Library under the hood for dekstop.
+Uses Skia Library under the hood for desktop.
 
 # Is it production ready?
 Well yes and no at the same time. You can use compose generated UIControllers with swift ui to share ui and use swift ui or uikit for features like camera, sensors etc.
