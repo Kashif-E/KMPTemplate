@@ -1,3 +1,5 @@
 package com.kashif.common
 
-expect fun getPlatformName(): String
+import org.koin.core.module.Module
+
+expect fun platformModule(): Module

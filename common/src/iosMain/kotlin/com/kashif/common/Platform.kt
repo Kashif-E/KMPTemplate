@@ -1,6 +1,8 @@
 package com.kashif.common
 
+import org.koin.dsl.module
 
-actual fun getPlatformName(): String {
-    return "Ios"
+
+actual fun platformModule()= module {
+
 }

@@ -13,13 +13,12 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 
 @Composable
-internal fun App() {
+internal fun App(platform: String) {
     var text by remember { mutableStateOf("Hello, World!") }
-    val platformName = getPlatformName()
 
     Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
         Button(onClick = {
-            text = "Hello, $platformName"
+            text = "Hello, $platform"
         }) {
             Text(text)
         }
