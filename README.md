@@ -18,6 +18,14 @@ Runs natively on Android.
 Uses UIKit under the hood for IOS.
 Uses Skia Library under the hood for desktop.
 
+# Template Features
+<ul>
+<li>Compose Multiplatform already setup </li>
+<li>Koin already setup </li>
+<li>Ktor already setup </li>
+</ul>
+
+
 # Is it production ready?
 Well yes and no at the same time. You can use compose generated UIControllers with swift ui to share ui and use swift ui or uikit for features like camera, sensors etc.
 
