@@ -14,9 +14,11 @@ This is a bear minimum without networking or other things such as db. This will 
 ![Screenshot 2023-02-14 at 8 06 39 PM](https://user-images.githubusercontent.com/61690178/218813583-2c7a2ef9-4b42-4095-b5a6-7a6d5417bbf9.png)
 
 # How it works?
-Runs natively on Android.
-Uses UIKit under the hood for IOS.
-Uses Skia Library under the hood for desktop.
+<ul>
+<li>Runs natively on Android. </li>
+<li>Uses UIKit under the hood for IOS. </li>
+<li> Uses Skia Library under the hood for desktop. </li>
+</ul>
 
 # Template Features
 <ul>
