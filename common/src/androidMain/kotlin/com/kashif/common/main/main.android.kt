@@ -4,6 +4,6 @@ import androidx.compose.runtime.Composable
 import com.kashif.common.App
 
 @Composable
-fun Application(){
-    App()
+fun Application() {
+    App(platform = "Android")
 }

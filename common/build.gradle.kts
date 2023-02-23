@@ -41,6 +41,7 @@ kotlin {
                 api(compose.runtime)
                 api(compose.foundation)
                 api(compose.material)
+                implementation(libs.koin.core)
             }
         }
         val commonTest by getting {
@@ -52,6 +53,7 @@ kotlin {
             dependencies {
                 api(libs.androidx.appcompat)
                 api(libs.androidx.coreKtx)
+                implementation(libs.koin.compose)
             }
         }
         val androidUnitTest by getting {
@@ -62,6 +64,7 @@ kotlin {
         val desktopMain by getting {
             dependencies {
                 api(compose.preview)
+                implementation(libs.koin.core)
             }
         }
         val desktopTest by getting

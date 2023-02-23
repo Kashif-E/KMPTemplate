@@ -5,5 +5,5 @@ import platform.UIKit.UIViewController
 
 fun MainViewController(): UIViewController =
     Application("Example Application") {
-        App()
+        App("Ios")
     }

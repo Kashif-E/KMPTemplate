@@ -1,5 +1,7 @@
 package com.kashif.common
 
-actual fun getPlatformName(): String {
-    return "Desktop"
+import org.koin.dsl.module
+
+actual fun platformModule() = module {
+
 }
