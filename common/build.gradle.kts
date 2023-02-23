@@ -42,6 +42,12 @@ kotlin {
                 api(compose.foundation)
                 api(compose.material)
                 implementation(libs.koin.core)
+                implementation(libs.ktor.contentnegotiation)
+                implementation(libs.ktor.json)
+                implementation(libs.ktor.serialization)
+                implementation(libs.ktor.client.logging)
+                implementation(libs.ktor.serialization.json)
+
             }
         }
         val commonTest by getting {
@@ -54,6 +60,7 @@ kotlin {
                 api(libs.androidx.appcompat)
                 api(libs.androidx.coreKtx)
                 implementation(libs.koin.compose)
+                implementation(libs.ktor.android)
             }
         }
         val androidUnitTest by getting {
@@ -65,12 +72,16 @@ kotlin {
             dependencies {
                 api(compose.preview)
                 implementation(libs.koin.core)
+                implementation(libs.ktor.java)
             }
         }
         val desktopTest by getting
 
         val iosMain by getting {
             dependsOn(commonMain)
+            dependencies {
+                implementation(libs.ktor.ios)
+            }
         }
         val iosSimulatorArm64Main by getting {
             dependsOn(iosMain)
