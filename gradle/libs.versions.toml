@@ -15,6 +15,9 @@ targetSdk = "33"
 koin-version = "3.3.3"
 koin-compose-version = "3.4.2"
 
+ktor_version = "2.2.3"
+kotlin-serialization = "1.5.30"
+
 
 [libraries]
 androidGradle = { module = "com.android.tools.build:gradle", version.ref = "agp" }
@@ -27,5 +30,16 @@ androidx-activity-compose = { module = "androidx.activity:activity-compose", ver
 
 koin-core = {module = "io.insert-koin:koin-core", version.ref = "koin-version"}
 koin-compose = {module = "io.insert-koin:koin-androidx-compose", version.ref = "koin-compose-version"}
+
+ktor-core = {module = "io.ktor:ktor-client-core", version.ref = "ktor_version"}
+ktor-serialization = {module = "io.ktor:ktor-client-serialization", version.ref = "ktor_version"}
+ktor-android = {module = "io.ktor:ktor-client-android", version.ref = "ktor_version"}
+ktor-ios = {module = "io.ktor:ktor-client-ios", version.ref = "ktor_version"}
+ktor-java = {module = "io.ktor:ktor-client-java", version.ref = "ktor_version"}
+ktor-client-logging = {module = "io.ktor:ktor-client-logging", version.ref = "ktor_version"}
+ktor-json = {module = "io.ktor:ktor-client-json", version.ref = "ktor_version"}
+ktor-serialization-json = {module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor_version"}
+ktor-contentnegotiation = {module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor_version"}
+kotlin-seriazation = {module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlin-serialization"}
 
 junit = "junit:junit:4.13.2"
