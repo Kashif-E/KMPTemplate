@@ -35,7 +35,7 @@ If you have any suggestion or found a bug please add it to the issues.
 
 # Troubleshooting
 
-## MacOS on Apple Chit (M1/M2)
+## MacOS on Apple Chip (M1/M2)
 If you encounter the error `'pod install' command failed with code 1.` run the following commands 
 in the terminal
 ```
