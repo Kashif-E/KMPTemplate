@@ -33,6 +33,20 @@ Well yes and no at the same time. You can use compose generated UIControllers wi
 
 If you have any suggestion or found a bug please add it to the issues.
 
+# Troubleshooting
+
+## MacOS on Apple Chit (M1/M2)
+If you encounter the error `'pod install' command failed with code 1.` run the following commands 
+in the terminal
+```
+sudo softwareupdate --install-rosetta --agree-to-license
+```
+```
+sudo gem uninstall ffi && sudo gem install ffi -- --enable-libffi-alloc
+```
+
+
+
 <p align="left">
 <a href="https://twitter.com/kashif_mehmood_" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="kashif_mehmood_" height="30" width="40" /></a>
 <a href="https://linkedin.com/in/kashif-mehmood" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="kashif-mehmood" height="30" width="40" /></a>
