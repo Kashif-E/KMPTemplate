@@ -5,6 +5,8 @@ plugins {
     kotlin("native.cocoapods")
 }
 
+//TODO: change your group
+
 group = "com.kashif"
 version = "1.0-SNAPSHOT"
 
@@ -59,7 +61,6 @@ kotlin {
             dependencies {
                 api(libs.androidx.appcompat)
                 api(libs.androidx.coreKtx)
-                implementation(libs.koin.compose)
                 implementation(libs.ktor.android)
             }
         }

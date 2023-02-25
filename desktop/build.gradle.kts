@@ -7,6 +7,8 @@ plugins {
     id("org.jetbrains.compose")
 }
 
+//TODO: Change group
+
 group = "com.kashif"
 version = "1.0-SNAPSHOT"
 
