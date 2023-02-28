@@ -23,6 +23,7 @@ This is a bear minimum without networking or other things such as db. This will 
 # Template Features
 <ul>
 <li>Compose Multiplatform already setup </li>
+<li> Version Catalog </li>
 <li>Koin already setup </li>
 <li>Ktor already setup </li>
 </ul>
