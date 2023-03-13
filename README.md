@@ -27,7 +27,7 @@ This is a bear minimum without networking or other things such as db. This will 
 <li>Koin </li>
 <li>Ktor </li>
 <li>Kotlin serialization </li>
-<li>Image loader <li>
+<li>Image loader </li>
 </ul>
 
 
