@@ -1,6 +1,4 @@
-import org.jetbrains.compose.compose
 import org.jetbrains.compose.desktop.application.dsl.TargetFormat
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("multiplatform")
@@ -25,6 +23,10 @@ kotlin {
             dependencies {
                 implementation(project(":common"))
                 implementation(compose.desktop.currentOs)
+            }
+            configurations.all {
+                // some dependencies contains it, this causes an exception to initialize the Main dispatcher in desktop for image loader
+                exclude("org.jetbrains.kotlinx", "kotlinx-coroutines-android")
             }
         }
         val jvmTest by getting
