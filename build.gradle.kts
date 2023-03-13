@@ -14,8 +14,9 @@ buildscript {
     }
     dependencies {
         classpath(libs.androidGradle)
-
         classpath(libs.composeGradle)
         classpath(libs.kotlinGradle)
+        classpath((kotlin("serialization", version = "1.8.0")))
+
     }
 }

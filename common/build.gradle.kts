@@ -3,6 +3,7 @@ plugins {
     id("org.jetbrains.compose")
     id("com.android.library")
     kotlin("native.cocoapods")
+    kotlin("plugin.serialization")
 }
 
 //TODO: change your group
@@ -44,17 +45,24 @@ kotlin {
                 api(compose.foundation)
                 api(compose.material)
                 implementation(libs.koin.core)
-                implementation(libs.ktor.contentnegotiation)
                 implementation(libs.ktor.json)
-                implementation(libs.ktor.serialization)
                 implementation(libs.ktor.client.logging)
+                implementation(libs.ktor.serialization)
+                implementation(libs.ktor.contentnegotiation)
                 implementation(libs.ktor.serialization.json)
+                implementation(libs.kotlin.serialization)
+                implementation(libs.material.icon.extended)
+                api(libs.image.loader)
+                implementation(libs.compose.util)
+
 
             }
         }
         val commonTest by getting {
             dependencies {
                 implementation(kotlin("test"))
+
+
             }
         }
         val androidMain by getting {
@@ -62,6 +70,7 @@ kotlin {
                 api(libs.androidx.appcompat)
                 api(libs.androidx.coreKtx)
                 implementation(libs.ktor.android)
+                implementation(libs.koin.compose)
             }
         }
         val androidUnitTest by getting {
@@ -74,6 +83,8 @@ kotlin {
                 api(compose.preview)
                 implementation(libs.koin.core)
                 implementation(libs.ktor.java)
+                implementation(libs.koin.compose)
+
             }
         }
         val desktopTest by getting
