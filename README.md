@@ -22,10 +22,12 @@ This is a bear minimum without networking or other things such as db. This will 
 
 # Template Features
 <ul>
-<li>Compose Multiplatform already setup </li>
+<li>Compose Multiplatform  </li>
 <li> Version Catalog </li>
-<li>Koin already setup </li>
-<li>Ktor already setup </li>
+<li>Koin </li>
+<li>Ktor </li>
+<li>Kotlin serialization </li>
+<li>Image loader <li>
 </ul>
 
 
