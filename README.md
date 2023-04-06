@@ -2,7 +2,7 @@
 
 <a href="https://www.buymeacoffee.com/kashifmehmood"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=kashifmehmood&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
 
-Featured in  <a href= "https://us12.campaign-archive.com/?u=f39692e245b94f7fb693b6d82&id=c0b6a6fd66"> Kotlin weekly </a>
+Featured in  <a href= "https://us12.campaign-archive.com/?u=f39692e245b94f7fb693b6d82&id=c0b6a6fd66"> Kotlin weekly </a> and <a href= "https://us12.campaign-archive.com/?u=f39692e245b94f7fb693b6d82&id=78f6f6dd04"> Kotlin weeekly </a>
 
 
 The KMPTemplate is designed to help developers build applications for three platforms:
