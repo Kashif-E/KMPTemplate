@@ -41,7 +41,7 @@ internal fun AsyncImage(url: String, modifier: Modifier) {
         modifier = modifier,
     )
     when (val requestState = painter.requestState) {
-        ImageRequestState.Loading -> {
+       is  ImageRequestState.Loading -> {
             Box(modifier = modifier, contentAlignment = Alignment.Center) {
                 CircularProgressIndicator()
             }
